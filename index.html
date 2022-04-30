@@ -10,24 +10,37 @@
 </head>
 <body>
     <div class="container" id="container">
-        <input id="screen"  value="" type="alphanumeric" disabled></input>
-        <div class="grid">
+        <input id="screen"  value="" type="alphanumeric" disabled placeholder="The Ace"></input>
+        <div id="grid">
             <button onclick="insertNum(1)">1</button>
             <button onclick="insertNum(2)">2</button>
             <button onclick="insertNum(3)">3</button>
-            <button onclick="insertSym('+')">+</button>
+            <button class="spanRow" onclick="insertSym('+')">+</button>
             <button onclick="insertNum(4)">4</button>
             <button onclick="insertNum(5)">5</button>
             <button onclick="insertNum(6)">6</button>
-            <button onclick="insertSym('-')">-</button>
             <button onclick="insertNum(7)">7</button>
             <button onclick="insertNum(8)">8</button>
             <button onclick="insertNum(9)">9</button>
-            <button onclick="insertSym('*')">x</button>
-            <button id="cls" onclick="cls()">CLS</button>
+            <button onclick="insertSym('-')">-</button>
             <button onclick="insertNum(0)">0</button>
+            <button class="dot" onclick="insertNum('.')">.</button>
+            <button onclick="insertSym('*')">x</button>
             <button onclick="insertSym('/')">&divide;</button>
+            <button id="cls" onclick="del()">DEL</button>
+            <button id="cls" onclick="cls()">CLS</button>
+            <button id="more" onclick="more()">MORE</button>
             <button onclick="calc()">=</button>
+        </div>
+        <div id="grid2">
+            <button onclick="sqrt()">&Sqrt;</button>
+            <button onclick="insertNum('**2')">x<sup>2</sup></button>
+            <button onclick="insertNum('**3')">x<sup>3</sup></button>
+            <button onclick="insertNum('**')">x<sup>y</sup></button>
+            <button onclick="log()">log</button>
+            <button onclick="calc()">=</button>
+            <button id="more" onclick="back()">BACK</button>
+            <button id="more" onclick="info()">INFO</button>
         </div>
     </div>
 </body>

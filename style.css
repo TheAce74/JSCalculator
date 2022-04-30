@@ -15,7 +15,7 @@ body {
 
 #screen {
     width: 90%;
-    margin: 20px 10px;
+    margin: 18px 10px;
     padding-bottom: 0;
     padding-top: 23px;
     height: 12%;
@@ -30,7 +30,7 @@ body {
     padding-right: 15px;
 }
 
-.grid {
+#grid {
     width: 94%;
     margin: auto;
     display: grid;
@@ -40,14 +40,45 @@ body {
     padding-top: 30px;
 }
 
+#grid2 {
+    width: 94%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    height: 65%;
+    padding-top: 30px;
+    display: none;
+}
+
 button {
-    font-size: 1.7em;
+    font-size: 1.4em;
     border-radius: 10px;
     cursor: pointer;
 }
 
+button:active {
+    transform: scale(.9);
+}
+
 #cls {
     background: rgb(165, 42, 79);
+}
+
+.spanRow {
+    grid-row: span 2;
+}
+
+.spanCol {
+    grid-column: span 2;
+}
+
+.dot {
+    font-weight: bold;
+}
+
+#more {
+    background-color: rgb(146, 18, 129);
 }
 
 @media (max-width:520px) {

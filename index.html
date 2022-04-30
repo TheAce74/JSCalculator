@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <input id="screen"  value="" type="alphanumeric" disabled></input>
+        <div class="grid">
+            <button onclick="insertNum(1)">1</button>
+            <button onclick="insertNum(2)">2</button>
+            <button onclick="insertNum(3)">3</button>
+            <button onclick="insertSym('+')">+</button>
+            <button onclick="insertNum(4)">4</button>
+            <button onclick="insertNum(5)">5</button>
+            <button onclick="insertNum(6)">6</button>
+            <button onclick="insertSym('-')">-</button>
+            <button onclick="insertNum(7)">7</button>
+            <button onclick="insertNum(8)">8</button>
+            <button onclick="insertNum(9)">9</button>
+            <button onclick="insertSym('*')">x</button>
+            <button id="cls" onclick="cls()">CLS</button>
+            <button onclick="insertNum(0)">0</button>
+            <button onclick="insertSym('/')">&divide;</button>
+            <button onclick="calc()">=</button>
+        </div>
+    </div>
+</body>
+</html>

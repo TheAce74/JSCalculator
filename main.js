@@ -15,7 +15,7 @@ function cls() {
 function calc() {
     const result = eval(screen.value);
     screen.value = result;
-    if(screen.value=="Infinity") {
+    if(screen.value=="Infinity" || screen.value== "NaN") {
         screen.value = "Math Error";
     }
     if(screen.value=="undefined") {
